@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(241, 241, 241);
+}
+
+::selection {
+  color: rgb(241, 241, 241);
+  background-color: rgb(80, 12, 119);
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+h1 {
+  color: rgb(80, 12, 119);
+}
+
+p {
+  color: rgb(101, 95, 105);
+}
+
+p::first-letter,
+span::first-letter {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  background-color: rgb(80, 12, 119);
+  color: rgb(241, 241, 241);
+  border: none;
+  padding: .5rem 1rem;
+  margin: 0 .25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

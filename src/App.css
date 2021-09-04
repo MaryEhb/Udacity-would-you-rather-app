@@ -1,0 +1,497 @@
+.App {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 97.5vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.dashboard,
+.login,
+.nav {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.navWrap {
+  width: 100%;
+  border-bottom: solid 4px rgb(80, 12, 119);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  align-items: flex-end;
+}
+
+.nav a,
+.nav span {
+  color: rgb(80, 12, 119);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.nav a {
+  margin: 0 .5rem;
+  padding: .5rem;
+}
+
+.logoutBtn {
+  padding: .25rem 1rem !important;
+  color: rgb(241, 241, 241) !important
+}
+
+.logoutBtn:hover {
+  background-color: rgb(255, 48, 48);
+  transform: scale(1.1);
+}
+
+.mainNav a.active,
+.nav a.active:hover {
+  background-color: rgb(80, 12, 119);
+  color: rgb(241, 241, 241);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.mainNav a:hover {
+  background-color: rgb(218, 189, 235);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.login {
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+}
+
+.login p {
+  padding: .5rem 0 2.5rem;
+}
+
+.login p span {
+  color: rgb(80, 12, 119);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.dashboard {
+  background-color: rgb(235, 235, 235);
+
+}
+
+.home,
+.leaderboard {
+  padding: 0 2rem;
+}
+
+.avatar-wrap {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgb(218, 189, 235);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  margin: .5rem;
+}
+
+.avatar-wrap .avatar,
+.poll-wrap .avatar {
+  width: 70px
+}
+
+.nav .avatar-wrap {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  margin-left: .5rem;
+}
+
+.nav .avatar {
+  width: 22px;
+  height: 22px
+}
+
+.loggedNav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.users .btn {
+  margin: 1.5rem;
+  padding: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.users .avatar-wrap {
+  margin-bottom: 1rem;
+}
+
+.choice-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.choice-btns .btn {
+  width: 50%;
+  margin: 0;
+}
+
+.choice-btns .btn:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+
+.choice-btns .btn:nth-of-type(2) {
+  border-radius: 0 5px 5px 0;
+}
+
+.choice-btns .btn.inactive {
+  background-color: rgb(235, 235, 235);
+  border: solid 3px rgb(80, 12, 119);
+  color: rgb(80, 12, 119);
+}
+
+.choice-btns .inactive:hover {
+  background-color: rgb(218, 189, 235);
+}
+
+.question,
+.board,
+.no-question-found {
+  background-color: rgb(241, 241, 241);
+  margin: 2rem auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.question h2,
+.board h2 {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(218, 189, 235);
+  border-radius: 10px 10px 0 0;
+  padding: .5rem;
+}
+
+.info-wrap {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.board .info-wrap {
+  justify-content: space-evenly;
+}
+
+.info-wrap .info {
+  padding-left: 2rem;
+  border-left: 2px solid rgb(235, 235, 235);
+}
+
+.board .info-wrap .info {
+  padding: 2rem;
+}
+
+.info-wrap .avatar-wrap {
+  margin-right: 2rem;
+  margin-left: 1rem;
+
+}
+
+.info-wrap .total-wrap {
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: rgb(80, 12, 119);
+  color: rgb(218, 189, 235);
+  border-radius: 20px;
+}
+
+.info-wrap .total-wrap h3 {
+  padding-bottom: 1rem;
+}
+
+.info-wrap .total-wrap p {
+  font-size: 1.5rem;
+  color: rgb(241, 241, 241);
+  border-radius: 50%;
+  border: 1px solid rgb(218, 189, 235);
+  padding: .5rem;
+  font-weight: bold;
+}
+
+.board .info p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.board .info p:first-of-type {
+  border-bottom: 2px solid rgb(235, 235, 235)
+}
+
+.question a {
+  background-color: rgba(218, 189, 235, 0.26);
+  padding: .5rem 1rem;
+  margin: .75rem 0;
+  display: block;
+  width: fit-content;
+  border-radius: 5px;
+  border: 2px solid rgb(218, 189, 235);
+  color: rgb(80, 12, 119)
+}
+
+.newQuestion {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newQuestion form,
+.poll-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newQuestion .title {
+  padding: 1rem 0 .5rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.newQuestion form input {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  margin: .5rem;
+  background: none;
+  border: 3px solid rgb(218, 189, 235);
+
+}
+
+.newQuestion form input,
+.newQuestion form button {
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  width: 100%;
+  margin: .5rem;
+}
+
+.newQuestion form button {
+  max-width: 200px;
+}
+
+.newQuestion input:focus {
+  transform: scale(1.2);
+  border-color: rgb(80, 12, 119);
+}
+
+.newQuestion input::placeholder {
+  color: rgb(101, 95, 105);
+}
+
+.unanswered-poll {
+  background-color: rgb(218, 189, 235);
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin: 1rem;
+  border: 2px solid rgb(80, 12, 119);
+  min-width: 300px;
+}
+
+.unanswered-poll input {
+  margin-right: .5rem;
+}
+
+.unanswered-poll .btn {
+  width: 100%;
+  margin: 1rem 0 0
+}
+
+.unanswered-poll p {
+  padding-bottom: .5rem;
+}
+
+.answered-poll {
+  text-align: center;
+  padding-top: .5rem;
+}
+
+.answered-poll .option {
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: rgba(218, 189, 235, 0.589);
+  border: 2px solid rgba(80, 12, 119, 0.568);
+  min-width: 250px;
+}
+
+.option p {
+  color: black;
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+
+.answered-poll .option span {
+  color: rgb(101, 95, 105);
+}
+
+.chosen {
+  background-color: rgba(172, 255, 47, 0.424) !important;
+  border-color: yellowgreen !important;
+  transform: scale(1.2);
+  padding-bottom: .5rem !important;
+  margin: 2rem 0 !important;
+}
+
+.indicateChoice {
+  font-size: 8px !important;
+  background-color: rgba(120, 187, 20, 0.623);
+  padding: .5rem;
+  color: rgb(241, 241, 241) !important;
+  font-weight: bold;
+  width: fit-content;
+  border-radius: 5px;
+  margin: 1rem auto
+}
+
+.board .first-place,
+.board .second-place {
+  position: relative;
+}
+
+.board .first-place::before,
+.board .second-place::before {
+  position: absolute;
+  top: 27%;
+  left: 7.5%;
+  color: #d6c102;
+  border: 1px solid #d6c102;
+  content: 'First Place';
+  background-color: rgb(255, 255, 94);
+  font-size: 10px;
+  padding: .25rem;
+  border-radius: 5px;
+}
+
+.board .second-place::before {
+  content: 'second place';
+  background-color: rgb(231, 231, 231);
+  color: rgb(158, 158, 158);
+  border-color: rgb(158, 158, 158);
+}
+
+.progress-wrap {
+  height: 20px;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.progress {
+  height: 20px;
+  background-color: rgb(80, 12, 119);
+  color: rgb(241, 241, 241);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-weight: bold;
+}
+
+.chosen .progress {
+  background: yellowgreen
+}
+
+.no-question-found,
+.finished-ans {
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  color: rgb(80, 12, 119);
+
+}
+
+.no-question-found p {
+  padding: 1rem;
+}
+
+.no-question-found a {
+  text-decoration: underline;
+}
+
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: rgb(218, 189, 235);
+  text-align: center;
+  padding: 1rem;
+  bottom: 0%;
+  margin-top: 3rem;
+}
+
+footer p {
+  color: rgb(80, 12, 119);
+}
+
+footer p:first-of-type {
+  padding-bottom: .5rem;
+}
+
+footer a {
+  color: rgb(101, 95, 105);
+  text-decoration: underline;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {  */
+
+.btn,
+.nav a,
+.avatar-wrap,
+.newQuestion input,
+.question a {
+  transition: all ease-in-out .2s;
+}
+
+.users .btn:hover,
+.avatar-wrap:hover,
+.users .btn:hover .avatar-wrap,
+.newQuestion .btn:hover {
+  transform: scale(1.2);
+}
+
+.question a:hover {
+  background-color: rgb(218, 189, 235);
+  color: rgb(241, 241, 241);
+}
+
+.users .btn:active,
+.newQuestion .btn:active {
+  transform: scale(1);
+}
+
+.nav .logoutBtn:active {
+  transform: scale(.95);
+}
+
+.question a:active,
+.unanswered-poll .btn:active {
+  transform: scale(.8);
+}
+
+/* } */
