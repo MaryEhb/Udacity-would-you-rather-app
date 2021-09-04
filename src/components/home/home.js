@@ -17,7 +17,11 @@ class Home extends Component {
 
     if (type === "answered") {
       this.setState({
-        displayed: Object.keys(users[logged].answers),
+        displayed: questions
+        .filter(
+          (question) => users[logged].answers.hasOwnProperty(question.id)
+        )
+        .map((question) => question.id),
         type: "answered",
       });
     } else {
